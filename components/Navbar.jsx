@@ -11,38 +11,38 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-20 shadow-lg z-[100]">
+    <div className="fixed w-full h-20 shadow-lg z-[100] bg-[#ecf0f3]">
       <div className="flex justify-start lg:justify-center items-center w-full h-full px-4">
         <div>
           <ul className="hidden lg:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 Home
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 About
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 Skills
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 Projects
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 Contact
               </li>
             </Link>
           </ul>
           <div onClick={toggleNav} className="lg:hidden ">
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={25} className="cursor-pointer" />
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed  left-0 top-0 w-[75%] sm:w-[60%] md:w-[50%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 flex flex-col justify-between"
-              : "fixed  left-[-75%] top-0 h-screen p-10 ease-in duration-500 flex flex-col justify-between"
+              : "fixed  left-[-100%] top-0 h-screen p-10 ease-in duration-500 flex flex-col justify-between"
           }
         >
           <div>
